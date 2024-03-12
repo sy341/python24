@@ -11,10 +11,9 @@ else:
             #is_prime_number = is_prime_number +1
             is_prime_number = False #Remove addition operation
             break #Exit the loop when the first divisor is found. Performance is improved when the input is not prime number.
-            print(i, end+' ')
-            i = i + 1
+        #print(i, end+' ')
+        i = i + 1
 
-# if count == 2:
 if is_prime_number: #Remove comparison (equal) operator
     print(f"{number} is prime number~")
 else:
