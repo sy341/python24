@@ -1,10 +1,6 @@
-print(ord('B'))
 
-test = input("input start number : ").split()
-# print (int(test[0]), int(test[1]))
+start, end = list(map(int, input("input start number : ").split()))
 
-start = int(test[0])
-end = int(test[1])
 
 for k in range (start, end+1):
     is_prime_number = True
@@ -20,7 +16,7 @@ for k in range (start, end+1):
         if is_prime_number: print(k, end=' ')
 
 is_prime_number = True  #Change variable name to count->is_prime_number for readability.
-if number < 2:
+if  is_prime_number < 2:
     is_prime_number = False
 else:
     #for i in range(2,number):
