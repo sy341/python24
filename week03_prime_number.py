@@ -1,4 +1,21 @@
-m=number = int(input("input number : "))
+test = input("input start number : ").split()
+# print (int(test[0]), int(test[1]))
+
+start = int(test[0])
+end = int(test[1])
+
+for k in range (start, end+1):
+    is_prime_number = True
+    if k < 2:
+        is_prime_number = False
+    else:
+        i = 2
+        while i*i <= k:
+            if k % i == 0:
+                is_prime_number = False
+                break
+            i = i +1
+        if is_prime_number: print(k, end=' ')
 
 is_prime_number = True  #Change variable name to count->is_prime_number for readability.
 if number < 2:
@@ -14,8 +31,3 @@ else:
             print(i, end+' ')
             i = i + 1
 
-# if count == 2:
-if is_prime_number: #Remove comparison (equal) operator
-    print(f"{number} is prime number~")
-else:
-    print(f"{number} is NOT prime number!")
