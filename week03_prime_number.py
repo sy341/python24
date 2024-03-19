@@ -1,3 +1,5 @@
+print(ord('B'))
+
 test = input("input start number : ").split()
 # print (int(test[0]), int(test[1]))
 
