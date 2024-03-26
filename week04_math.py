@@ -21,9 +21,9 @@ def power(b, e) -> int:...\
 while True:
     menu = int(input("1) prime number  2) power  3) divmod  4) quit : "))
     if menu == 1:
-        start, end = list(map(int, input("input start & end number : ").split()))
+        (start, end) = list(map(int, input("input start & end number : ").split()))
         for k in range(start, end + 1):
-            if is_prime_number(k)L print(k, end=' ')
+            if is_prime_number(k): print(k, end=' ')
     elif menu == 2:
         base, exponent = map(int, input(" Input base & exponent number : ").split())
         print(f"{base}^{exponent} = {base ** exponent}")
@@ -31,8 +31,10 @@ while True:
         dividend, divisor = map(int, input("input dividend & divisor number : ").split())
         print(f"{dividend} // {divisor} = {divmod(dividend, divisor)[0]}")
         print(f"{dividend} % {divisor} = {divmod(dividend, divisor)[1]}")
-    elif menu == 4L
+    elif menu == 4:
         print ("exit program...")
         break
+    else:
+        print("please choose from the n=menu.")
 
 
