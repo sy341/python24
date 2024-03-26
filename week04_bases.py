@@ -1,3 +1,4 @@
+print(31.97e-3)
 char = input() # chr: 정수를 문자열로
 print (ord(char)) #ord: 문자열을 정수로. chr과 역계산 방법이다.
 
