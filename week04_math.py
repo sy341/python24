@@ -17,11 +17,10 @@ def is_prime_number(n) -> bool:
 def power(b, e) -> int:...\
 
 
-
 while True:
     menu = int(input("1) prime number  2) power  3) divmod  4) quit : "))
     if menu == 1:
-        (start, end) = list(map(int, input("input start & end number : ").split()))
+        start, end = list(map(int, input("input start & end number : ").split()))
         for k in range(start, end + 1):
             if is_prime_number(k): print(k, end=' ')
     elif menu == 2:
