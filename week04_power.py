@@ -14,4 +14,4 @@ def power(b,e) -> int:
     base, exponent = map(int, input("input base & exponent number > ").split())
     print(f"{base}^{exponent} = {base**exponent}") #operator"
     print(f"{base}^{exponent} = {pow(base, exponent)}(") #built-in function
-    print(f"{base}^{exponent} = {power(base, exponent)}") #custom function
+    print(f"{base}^{exponent} = {power(base, exponent)}") #custom function: 만든거.
