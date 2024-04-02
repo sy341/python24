@@ -13,3 +13,5 @@ while True: #주문 종료 시까지 돌리는 게 키오스크.
         print ("You ordered caffe latte. The price is 1500 won.")
     elif menu == 1:
         print("You ordered americano. The price is 2500 won.")
+    else:
+        print(f"Menu number {menu} you ordered does not exist. Please choose from the menu.")
