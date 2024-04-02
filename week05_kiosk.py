@@ -6,8 +6,12 @@ price = [1500, 2500, 2300]
 total_price = 0
 quantity = [0, 0, 0]
 
+menu_lists = ''
+for m in range(len(beverage)):
+    menu_lists = menu_lists + f"{m+1} {beverage[m]} {price[m]won}  "
+
 while True: #주문 종료 시까지 돌리는 게 키오스크.
-    menu = input("1) americano  2) caffe latte  3) Iced tea  4) end order : ")
+    menu = input(menu_lists + "m+1"") end order : ")
     if menu == '4':
         print ("Exit program")
         break
