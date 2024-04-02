@@ -26,15 +26,16 @@ while True: #주문 종료 시까지 돌리는 게 키오스크.
     else:
         print(f"Menu number {menu} you ordered does not exist. Please choose from the menu.")
 
-for i in range (2):
+for i in range (len(beverage)):
     if quantity[i] != 0:
         print(f"{beverage[i]}\n\t{price[i]}\tx{quantity[i]}\t{price[i] * quantity[i]}")
-if quantity[0] != 0:
-    print(f"{beverage[0]}\n\t{price[0]}\tx{quantity[0]}\t{price[0] * quantity[0]}")
-if quantity[1] != 0:
-    print(f"{beverage[1]}\n\t{price[1]}\tx{quantity[1]}\t{price[1] * quantity[1]}")
-if quantity[2] != 0:
-    print(f"{beverage[2]}\n\t{price[2]}\tx{quantity[2]}\t{price[2] * quantity[2]}")
+
+#if quantity[0] != 0:
+   #print(f"{beverage[0]}\n\t{price[0]}\tx{quantity[0]}\t{price[0] * quantity[0]}")
+#if quantity[1] != 0:
+    #print(f"{beverage[1]}\n\t{price[1]}\tx{quantity[1]}\t{price[1] * quantity[1]}")
+#if quantity[2] != 0:
+    #print(f"{beverage[2]}\n\t{price[2]}\tx{quantity[2]}\t{price[2] * quantity[2]}")
 
 #print(f"{beverage[0]}\n\t{price[0]}\tx{quantity[0]}\t{price[0] * quantity[0]}")
 #print(f"{beverage[1]}\n\t{price[1]}\tx{quantity[1]}\t{price[1] * quantity[1]}")
