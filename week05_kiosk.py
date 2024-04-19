@@ -16,15 +16,15 @@ while True: #주문 종료 시까지 돌리는 게 키오스크.
         print ("Exit program")
         break
     elif menu == '3':
-        print("You ordered {baverage[2]}. The price is {price[2]} won.")
+        print("You ordered", {beverage[2]},". The price is", {price[2]}, "won.")
         total_price = total_price + price[2]
         quantity[2] = quantity[2] + 1
     elif menu == '2':
-        print ("You ordered {baverage[1]}. The price is {price[1]} won.")
+        print ("You ordered", {beverage[1]},". The price is", {price[1]}, "won.")
         total_price = total_price + price[1]
         quantity[1] = quantity[1] + 1
     elif menu == '1':
-        print("You ordered {baverage[0]}. The price is {price[0]} won.")
+        print("You ordered", {beverage[0]},". The price is", {price[0]},"won.")
         total_price = total_price + price[0]
         quantity[0] = quantity[0] + 1
     else:
